@@ -1,0 +1,9 @@
+# .gitignore
+.env
+*.ipynb
+__pycache__/
+vectorstore/
+data/
+.chroma/
+node_modules/
+.next/
