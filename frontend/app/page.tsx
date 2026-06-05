@@ -25,7 +25,7 @@ export default function Home() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:8000/ask", {
+      const res = await fetch("https://rag-assistant-production-5e1f.up.railway.app/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: input }),
@@ -46,7 +46,7 @@ export default function Home() {
     const formData = new FormData();
     formData.append("file", file);
     try {
-      const res = await fetch("http://localhost:8000/upload", {
+      const res = await fetch("https://rag-assistant-production-5e1f.up.railway.app/upload", {
         method: "POST",
         body: formData,
       });
