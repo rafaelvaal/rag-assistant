@@ -5,10 +5,14 @@ from fastapi.middleware.cors import CORSMiddleware
 from models import QuestionRequest, AnswerResponse
 from pipeline import ingest, ask
 import shutil
-import os
+
+
 from dotenv import load_dotenv
 
 load_dotenv()
+
+import os
+
 
 app = FastAPI(title="RAG Assistant API")
 
