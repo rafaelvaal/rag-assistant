@@ -10,3 +10,5 @@ sentence-transformers
 chromadb
 python-multipart
 python-dotenv
+langchain-pinecone
+pinecone
